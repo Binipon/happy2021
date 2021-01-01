@@ -5,8 +5,8 @@
 }
 
 html,body {
-  /* margin: 0; */
-  /* padding: 0; */
+  margin: 0;
+  padding: 0;
   background: hsla(60, 100%, 50%, 0.8);
   background: #fff;
   font-family: 'Kosugi Maru', sans-serif;
