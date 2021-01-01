@@ -83,7 +83,7 @@ main {
   padding: 8px;
   cursor: pointer;
   user-select: none;
-  margin: 1em auto 0;
+  margin: 1em auto 1em;
   background:#fff;
   transition-duration: .6s;
   -webkit-transition-duration: .6s; /*safari*/
