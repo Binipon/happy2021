@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- https://developers.google.com/speed/libraries のlibrariesから持ってきた -->
+    
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+    <title>初詣</title>
+    
+    <link rel="stylesheet" href="css/hatumoude.css"> 
+</head>
+<body>
+  <!-- navigation -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a  class="navbar-brand" href="#"><p>初詣</p></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center " id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="index.html" class="nav-link" >ホーム</a>
+          </li>
+          <li class="nav-item">
+            <a href="hatumoude.html" class="nav-link" >初詣</a>
+          </li>
+          <li class="nav-item">
+            <a  href="omikuji.html" class="nav-link" >おみくじ</a>
+          </li>
+          <li class="nav-item">
+            <a  href="slot.html" class="nav-link">スロット</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> 
+  
+  <main>
+    <!-- ヘッダー画像 -->
+  <img  class="img-fluid header-img" src="img/hatumoude1.jpg">
+    
+    <!-- 初詣のスタートボタン -->
+  <div id="btn">参拝する</div>
+      
+    <!-- モーダルのボタン -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#otsuge" id="message">アマビエ様のお告げ</button>
+
+    <!-- モーダル -->
+  <div class="modal fade" id="otsuge" tabindex="-1" role="dialog" aria-labelledby="otsugeTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title w-100 text-center" id="otsugeTitle">お告げ</h5>
+        </div>
+        <div class="modal-body">
+          <p class="lead w-100 text-center">大船に乗ったつもりで生きるがよい</p>
+          <img src="img/otsuge.jpg" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info m-auto" data-dismiss="modal">りょ〜か〜い！</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 鈴の写真　最初はCSSで隠しておく --> 
+  <img id="img" src="img/hatumoude4.jpg"> 
+</main>
+  <script src="js/hatumoude.js"></script>
+</body>
+</html>

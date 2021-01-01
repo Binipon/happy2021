@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+
+ * {
+  box-sizing: border-box;
+} 
+
+html,body {
+  margin:0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: hsl(350, 100%, 88%);
+  font-size: 1em;
+  font-weight: bold;
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+nav {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+nav.bg-light {
+  background:  hsl(350, 96%, 67%) !important;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+ p {
+  color: hsl(240, 100%, 25%);
+  text-shadow: 1px 2px #fff;
+  margin: 0;
+}
+
+nav a{
+  color: #fff!important;
+}
+
+nav ul {
+  margin-left: auto; 
+}
+
+main {
+  width: 350px;
+  background:hsl(209, 100%, 88%) ;
+  padding: 20px 10px;
+  border: 4px solid #fff;
+  border-radius: 16px;
+  margin: 1em auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  width: 100%;
+}
+
+.panel img {
+  width: 100px;
+  margin-bottom: 1em;
+}
+
+.stop {
+  width: 100px;
+  cursor: pointer;
+  border: 2px solid hsl(84, 84%, 49%);
+  /* padding: 2px; */
+  line-height: 32px;
+  text-align: center;
+  border-radius: 16px;
+  background:hsl(84, 84%, 49%);
+  box-shadow: 0 2px 0 hsl(84, 82%, 37%);
+  user-select: none;
+}
+
+.stop:hover,
+.stop:focus {
+  outline: none;
+  background: hsl(200, 100%, 88%);
+  border-color: hsl(200, 100%, 88%);
+  box-shadow: 0 2px 0 hsl(200, 100%, 77%);
+}
+
+#spin {
+  width: 250px;
+  cursor: pointer;
+  border: 2px solid hsl(350, 96%, 67%);
+  
+  line-height: 32px;
+  text-align: center;
+  border-radius: 16px;
+  
+  background:  hsl(350, 96%, 67%);
+  box-shadow: 0 4px 0  hsl(350, 66%, 67%);
+  user-select: none;
+  margin: 2em auto;
+}
+
+#spin:hover,
+#spin:focus {
+  outline: none;
+  background: hsl(350, 86%, 67%);
+  border-color: hsl(350, 86%, 67%);
+  box-shadow: 0 4px 0  hsl(350, 56%, 67%);
+}
+
+.unmatched {
+  opacity: .5;
+}
+
+.inactive {
+  opacity: .8;
+}
+
+.wrapper {
+  position: relative;
+}
+
+
+#result {
+  width: 300px;
+  height: 300px;
+  border-radius: 16px;
+  /* margin:2em auto;  */
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  
+}
+
+#result.great{
+  opacity: 1;
+  background-image: url('../img/slot-great.png');
+   background-position: center; 
+   background-size: cover; 
+   transition-delay: .2s
+}
+#result.dontMind{
+  opacity: 1;
+  background-image: url('../img/slot-dontMind.png'); 
+   background-position: center; 
+   background-size: cover; 
+   transition-delay: .2s
+}
+
+@media screen and (min-width: 576px) {
+  .lead {
+    font-size: 1.5em;
+  }
+  
+  main {
+    width: 500px;
+  }
+
+  .panel img {
+    width: 150px;
+    margin-bottom: 1em;
+  }
+  
+  .stop {
+    width: 150px;
+  }
+
+  #spin {
+    width: 400px;
+  }
+  
+}
+
+@media screen and (min-width: 768px) {
+  .lead {
+    font-size: 2em;
+  }
+  
+  main {
+    width: 700px;
+  }
+
+  .panel img {
+    width: 210px;
+    margin-bottom: 1em;
+  }
+  
+  .stop {
+    width: 210px;
+  }
+
+  #spin {
+    width: 450px;
+    box-shadow: 0 4px 0  hsl(350, 66%, 67%);
+    margin: 3em auto;
+  }
+
+  .result {
+    width: 400px;
+    height: 400px;
+    
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .result {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+  }  
+}
+
+
+
+

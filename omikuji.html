@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ 
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <title> クッキーおみくじ</title>
+  <link rel="stylesheet" href="css/omikuji.css">
+</head>
+
+<body>
+   <!-- navigation -->
+   <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a  class="navbar-brand" href="#"><p>クッキーおみくじ</p></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-center " id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a href="index.html" class="nav-link" >ホーム</a>
+        </li>
+        <li class="nav-item">
+          <a href="hatumoude.html" class="nav-link" >初詣</a>
+        </li>
+        <li class="nav-item">
+          <a  href="omikuji.html" class="nav-link" >おみくじ</a>
+        </li>
+        <li class="nav-item">
+          <a  href="slot.html" class="nav-link">スロット</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    
+  <main>
+    <img  class="img-fluid header-img" src="img/omikuji-header.jpg">
+    <h1>クッキーおみくじ</h1>
+      
+      <img src ="img/cookiemikuji.png" id="omikujiImg"> 
+    
+    <button id="draw">おみくじをひく</button>
+  </main>
+  <script src="js/omikuji.js"></script>
+</body>
+</html>

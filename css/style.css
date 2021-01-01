@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-family: 'Kosugi Maru', sans-serif; 
+  height: 100vh;
+  background: hsl(81, 100%, 50%);
+}
+
+main {
+  max-width: 1200px;
+  background: hsl(51, 100%, 50%);
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* navigation */
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav.bg-light {
+  background: hsl(16, 100%, 50%)!important;
+}
+
+.navbar-brand p {
+  color: #fff;
+  text-shadow: 0 3px 0 #333;
+  line-height: 20px;
+  margin: 0;
+}
+
+.nav-link {
+  color: #fff!important;
+}
+
+/* header image */
+.header-img {
+  width: 100%;
+}
+
+/* New Year greeting */
+.new-year {
+  background: #fff;
+  border-radius: 50px;
+  width: 90%;
+  margin:1.5em  auto;
+}
+  .new-year p {
+  /* background:hsl(16, 100%, 50%); */
+  color: black;
+  padding: 1em;
+  font-size: 1.2rem;
+  line-height: 2.6rem;
+}
+
+/* spanの文字 */
+.wf-nikukyu {
+  font-family: "Nikukyu"; 
+  color:  hsl(16, 100%, 50%);
+  font-size:1.5em ;
+}
+
+/* 牛３匹のセクション */
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.ushi1 {
+  width: 30%;
+  padding: 1em 0;
+  animation: ushi-walk ease-in-out 1s;
+}
+.ushi2 {
+  width: 30%;
+  padding: 1em 0;
+  animation: ushi-walk ease-in-out 2s;
+  
+}
+.ushi3{
+  width: 30%;
+  padding: 1em 0;
+  animation: ushi-walk ease-in-out 3s; 
+}
+
+/* 牛３匹のアニメーション */
+@keyframes ushi-walk {
+  0% {
+    transform: translate(2500px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+/* 漢字の丑のセクション */
+.ushi-container {
+  position: relative;
+}
+
+.ushi-container img {
+  display: block;
+  margin: auto;
+  width: 70%;
+}
+
+.ushi-container button {
+  width: 70px;
+  height: 70px;
+  background:hsl(16, 100%, 50%);
+  border-radius: 50%;
+  margin: 1em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  animation: swing ease-in-out infinite alternate 3s;
+}
+
+.ushi-container a {
+  text-decoration: none;
+  color: #fff; 
+}
+
+.ushi-container button:hover {
+  box-shadow: 0 0 50px #fff;
+  opacity: .8;
+  
+}
+
+/* ボタンのアニメーション */
+@keyframes swing {
+  0% {
+    transform: scale(.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ３つのボタンの位置 */
+.hatumoude {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+
+.omikuji {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+/* フッター */
+footer {
+  max-width: 1200px;
+  background:hsl(16, 100%, 50%);
+  margin: 0 auto;
+  padding: 8px;
+}
+
+footer p {
+  font-size: .9em;
+  line-height: 1.4em;
+  color: #fff;
+  padding: .5em;
+  margin: 0;
+}
+
+/* メディアクエリ */
+@media screen and (min-width: 544px) {
+  .navbar-brand p {
+    text-shadow: 0 4px 0 #333;
+  }
+
+  .ushi-container button {
+    width: 80px;
+    height: 80px;
+  }
+
+  .ushi-container a {
+    font-size: 1.1em;
+  }
+
+  main {
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+     /* New Year greeting */
+.new-year {
+  width: 80%;
+  margin:1.4em  auto;
+}
+  .new-year p {
+  padding: 1em;
+  font-size: 1.2rem;
+  line-height: 2.6rem;
+}
+
+/* spanの文字 */
+.wf-nikukyu {
+  font-family: "Nikukyu"; 
+  color:  hsl(16, 100%, 50%);
+  font-size:1.6em ;
+}
+  .navbar-brand p {
+    font-size: 24px;
+  }
+
+  .ushi-container button {
+    width: 100px;
+    height: 100px;
+  }
+
+  .ushi-container a {
+    font-size: 1.2em;
+  }
+
+   /* ３つのボタンの位置 */
+   .hatumoude {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+  }
+
+  .omikuji {
+    position: absolute;
+    top: 40px;
+    right: 60px;
+  }
+
+  main {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* New Year greeting */
+  .new-year {
+    width: 70%;
+    margin:2em  auto;
+  }
+    .new-year p {
+    padding: 1em;
+    font-size: 1.3rem;
+    line-height: 2.8rem;
+  }
+
+  /* spanの文字 */
+  .wf-nikukyu {
+    font-family: "Nikukyu"; 
+    color:  hsl(16, 100%, 50%);
+    font-size:1.7em ;
+  }
+
+
+    .ushi-container button {
+      width: 120px;
+      height: 120px;
+  }
+
+    .ushi-container a {
+      font-size: 1.3em;
+    }
+
+    main {
+      padding-bottom: 40px;
+    }
+
+    footer p {
+      font-size: 1em;
+      padding: 1em;
+    }
+
+    /* ３つのボタンの位置 */
+  .hatumoude {
+    position: absolute;
+    top: 50px;
+    left: 70px;
+  }
+
+  .omikuji {
+    position: absolute;
+    top: 50px;
+    right: 70px;
+  }
+}
